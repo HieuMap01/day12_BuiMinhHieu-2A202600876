@@ -3,7 +3,7 @@
 ## Public URL
 
 ```text
-https://day12-agent.onrender.com
+https://day12-agent-dyck.onrender.com
 ```
 
 ## Platform
@@ -19,7 +19,7 @@ The deployed service responds successfully on `/health`.
 ### Health Check
 
 ```powershell
-curl.exe "https://day12-agent.onrender.com/health"
+curl.exe "https://day12-agent-dyck.onrender.com/health"
 ```
 
 Expected:
@@ -42,7 +42,7 @@ $body = @{ question = "Hello" } | ConvertTo-Json
 
 Invoke-RestMethod `
   -Method Post `
-  -Uri "https://day12-agent.onrender.com/ask" `
+  -Uri "https://day12-agent-dyck.onrender.com/ask" `
   -ContentType "application/json" `
   -Body $body
 ```
@@ -62,7 +62,7 @@ $body = @{ question = "Hello" } | ConvertTo-Json
 
 Invoke-RestMethod `
   -Method Post `
-  -Uri "https://day12-agent.onrender.com/ask" `
+  -Uri "https://day12-agent-dyck.onrender.com/ask" `
   -Headers @{ "X-API-Key" = "my-secret-key" } `
   -ContentType "application/json" `
   -Body $body

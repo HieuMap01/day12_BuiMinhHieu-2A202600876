@@ -88,13 +88,13 @@ I deployed the service to Render instead of Railway.
 Public URL:
 
 ```text
-https://day12-agent.onrender.com
+https://day12-agent-dyck.onrender.com
 ```
 
 Health check:
 
 ```powershell
-curl.exe "https://day12-agent.onrender.com/health"
+curl.exe "https://day12-agent-dyck.onrender.com/health"
 ```
 
 Observed result:
